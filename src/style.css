@@ -1,12 +1,13 @@
 * {
+  box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0px;
   margin: 0px;
 }
 
-body {
+/* body {
   display: grid;
-}
+} */
 
 header {
   display: grid;
@@ -65,7 +66,26 @@ img {
 }
 
 #content {
-  background-color: rgb(242, 74, 74);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  padding: 5px 10%;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: stretch;
+  justify-items: stretch;
+  gap: 1rem 2rem ;
+}
+
+.project {
+  width: minmax(100px, 300px);
+  border: 2px solid white;
+  height: 300px;
+  background-color: black;
+  color: white;
 }
 
 footer {
